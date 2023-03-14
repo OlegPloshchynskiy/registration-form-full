@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col col-md-6 col-12">
+                <form name="registration">
+                    <!-- --------------------------------- User id --------------------------------- -->
+                    <div>
+                        <label for="user_id" class="form-label">User ID <span class="text-danger">*</span> </label>
+                        <input type="number" class="form-control" name="user_id" aria-describedby="emailHelp">
+                        
+                    </div>
+                    <!-- --------------------------------- Password --------------------------------- -->
+                    <div>
+                        <label for="password" class="form-label">Password <span class="text-danger">*</span> </label>
+                        <input type="password" class="form-control" name="password">
+                        <button class="show-pass" type="button">
+                            <img src="images/eye.jpg" alt="">
+                        </button>
+                    </div>
+                    <!-- --------------------------------- Name --------------------------------- -->
+                    <div>
+                        <label for="name" class="form-label">Name <span class="text-danger">*</span> </label>
+                        <input type="text" name="name" class="form-control">
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- Address --------------------------------- -->
+                    <div>
+                        <label for="address" class="form-label" >Address <span class="text-danger">*</span> </label>
+                        <input type="text" name="address" class="form-control" placeholder="city, region, street (str.Example 11/11)">
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- Country (select) --------------------------------- -->
+                    <div>
+                        <label for="country" class="form-label">Country <span class="text-danger">*</span> </label>
+                        <select class="form-select" name="country" aria-label="Default select example">
+                            <option selected disabled value="sel">Select your country</option>
+                            <option>Ukraine</option>
+                            <option>Poland</option>
+                            <option>Turkey</option>
+                        </select>
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- ZIP-code --------------------------------- -->
+                    <div>
+                        <label for="zip_code" class="form-label">ZIP-code <span class="text-danger">*</span> </label>
+                        <input type="number" name="zip_code" class="form-control">
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- Email --------------------------------- -->
+                    <div>
+                        <label for="email" class="form-label">Email <span class="text-danger">*</span> </label>
+                        <input type="email" name="email" class="form-control">
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- Choose gender --------------------------------- -->
+                    <div>
+                        <label for="sex" class="form-label">Sex <span class="text-danger">*</span></label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="inlineRadio1"
+                                value="Male">
+                            <label class="form-check-label sex" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="sex" id="inlineRadio2"
+                                value="Female">
+                            <label class="form-check-label sex" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                    <!-- --------------------------------- Choose language --------------------------------- -->
+                    <div>
+                        <label for="language" class="form-label">Language <span class="text-danger">*</span></label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input language" name="language" type="checkbox" id="inlineCheckbox1" value="English">
+                            <label class="form-check-label" for="inlineCheckbox1">English</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input language" name="language" type="checkbox" id="inlineCheckbox2" value="Ukrainian">
+                            <label class="form-check-label" for="inlineCheckbox2">Ukrainian</label>
+                        </div>
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <!-- --------------------------------- About (message) --------------------------------- -->
+                    <div>
+                        <div class="form-floating">
+                            <textarea class="form-control" name="about" maxlength="100" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 140px; resize: none;"></textarea>
+                            <label for="about" class="form-label">Comments <span class="text-danger">*</span> </label>
+                        </div>
+                        <img src="" alt="" class="rate">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-12" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="success bg-primary">
+        <span>Welcome!</span>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>
