@@ -48,7 +48,7 @@ showPass.addEventListener("click", () => {
 });
 
 user_id.addEventListener("blur", () => {
-  user_id.value.length > 3 && user_id.value.length < 10
+  user_id.value.length > 3 && user_id.value.length <= 10
     ? done(0, "User ID")
     : error(0, "User ID - Invalid value");
 });
@@ -124,7 +124,7 @@ about.addEventListener("input", () => {
 });
 
 function checkId() {
-  if (user_id.value.length > 3 && user_id.value.length < 10) {
+  if (user_id.value.length > 3 && user_id.value.length <= 10) {
     return true;
   } else {
     return false;
